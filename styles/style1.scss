@@ -1,0 +1,168 @@
+@import "./partials";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $body-color;
+  overflow-x: hidden;
+}
+
+.container-test {
+  @include border-bottom;
+  @include border-top;
+  margin: 60px 450px;
+}
+
+.omschrijving {
+  font-size: $font-size;
+  color: $font-color;
+  text-align: left;
+  line-height: 40px;
+  width: 350px;
+  height: 350px;
+  background-color: $primary-color;
+  padding: $padding;
+  padding-bottom: 30px;
+  @include border-top;
+}
+
+.informatie {
+  background-color: $secundary-color;
+  padding: $padding;
+  @include border-bottom;
+  width: 350px;
+  .foto {
+    display: block;
+    margin: -90px auto 0;
+    border-radius: 50%;
+    border: 8px solid $primary-color;
+  }
+  .naam {
+    @include text;
+  }
+  .website {
+    @include text;
+    color: $website-color;
+  }
+}
+
+footer {
+  margin-bottom: 200px;
+}
+
+/*portfolio-grid*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: $primary-margin;
+  gap: 20px;
+}
+
+.image {
+  position: relative;
+  width: auto;
+  .image__img {
+    width: 100%;
+    border-radius: $border-radius;
+  }
+  .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include width-height;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .image__overlay:hover {
+    opacity: 1;
+    color: $primary-color;
+    background-color: $hover-color;
+    border-radius: $border-radius;
+  }
+  .image__title {
+    font-size: $font-size;
+    font-weight: bold;
+    color: $primary-color;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: center;
+    margin-left: $primary-margin;
+    margin-right: $primary-margin;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 70% 70% 70%;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    margin-left: $primary-margin;
+    margin-top: 50px;
+  }
+}
+/* social gedeelte*/
+
+.social {
+  @include width-height;
+  @include flex;
+  margin-top: 28%;
+  cursor: pointer;
+}
+
+.social a {
+  overflow: hidden;
+  color: $primary-color;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-right: -117%;
+  width: 300px;
+  height: 50px;
+  padding-left: 10px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+.social a:hover {
+  transform: translate(-250px, 0);
+}
+
+.social i {
+  font-size: $font-size;
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: 400;
+  padding: 10px;
+  width: 5px;
+}
+
+.social a:nth-child(1) {
+  background-color: #3b5998;
+}
+.social a:nth-child(2) {
+  background-color: #00aced;
+}
+.social a:nth-child(3) {
+  background-color: #007bbb;
+}
+.social a:nth-child(4) {
+  background-color: #333;
+}
+.social a:nth-child(5) {
+  background-color: #e17b77;
+}

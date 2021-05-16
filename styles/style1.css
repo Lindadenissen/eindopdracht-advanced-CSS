@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c3cfe2;
+  overflow-x: hidden;
+}
+
+.container-test {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin: 60px 450px;
+}
+
+.omschrijving {
+  font-size: 28px;
+  color: #091133;
+  text-align: left;
+  line-height: 40px;
+  width: 350px;
+  height: 350px;
+  background-color: #fff;
+  padding: 10px 50px;
+  padding-bottom: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.informatie {
+  background-color: #686de0;
+  padding: 10px 50px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 350px;
+}
+
+.informatie .foto {
+  display: block;
+  margin: -90px auto 0;
+  border-radius: 50%;
+  border: 8px solid #fff;
+}
+
+.informatie .naam {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+}
+
+.informatie .website {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  color: #c0bcbc;
+}
+
+footer {
+  margin-bottom: 200px;
+}
+
+/*portfolio-grid*/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  gap: 20px;
+}
+
+.image {
+  position: relative;
+  width: auto;
+}
+
+.image .image__img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.image .image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image .image__overlay:hover {
+  opacity: 1;
+  color: #fff;
+  background-color: #19315c;
+  border-radius: 30px;
+}
+
+.image .image__title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media only screen and (min-width: 720px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 300px 300px;
+        grid-template-columns: 300px 300px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70% 70% 70%;
+        grid-template-columns: 70% 70% 70%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 40px;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+}
+
+/* social gedeelte*/
+.social {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 28%;
+  cursor: pointer;
+}
+
+.social a {
+  overflow: hidden;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: -117%;
+  width: 300px;
+  height: 50px;
+  padding-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.social a:hover {
+  -webkit-transform: translate(-250px, 0);
+          transform: translate(-250px, 0);
+}
+
+.social i {
+  font-size: 28px;
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: 400;
+  padding: 10px;
+  width: 5px;
+}
+
+.social a:nth-child(1) {
+  background-color: #3b5998;
+}
+
+.social a:nth-child(2) {
+  background-color: #00aced;
+}
+
+.social a:nth-child(3) {
+  background-color: #007bbb;
+}
+
+.social a:nth-child(4) {
+  background-color: #333;
+}
+
+.social a:nth-child(5) {
+  background-color: #e17b77;
+}
+/*# sourceMappingURL=style1.css.map */
