@@ -1,0 +1,56 @@
+$font-size: 28px;
+$body-color: #c3cfe2;
+$font-color: rgb(9, 17, 51);
+$font-weight: 400;
+$primary-color: #fff;
+$secundary-color: #686de0;
+$tertiary-color: rgb(0, 0, 0);
+$hover-color: rgb(25, 49, 92);
+$website-color: rgb(192, 188, 188);
+$facebook-color: #3b5998;
+$twitter-color: #00aced;
+$linkedin-color: #007bbb;
+$github-color: #333;
+$blog-color: #e17b77;
+$padding: 10px 50px;
+$border-radius: 30px;
+$primary-margin: 20px;
+
+@mixin text {
+  text-align: center;
+  font-size: $font-size;
+  color: $primary-color;
+}
+
+@mixin width-height {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin border-bottom {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+@mixin border-top {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin social-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+@mixin margin-social {
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
